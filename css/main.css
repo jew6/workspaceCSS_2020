@@ -1,0 +1,61 @@
+/* 
+CSS garden design file by Jonathan Walker
+--------------------------------------------
+1: color
+2: layout
+3: font
+4: other decoration
+5: media
+
+*/
+
+/*--------------------color------------------*/
+html{
+    background-color: hsla(125, 30%, 89%, .45);
+}
+body{
+    background-color: hsla(250, 45%, 60%, .5);
+    padding: 5%;
+}
+
+div.preamble,div.requirement,div.benefits{
+    color:rgba(60, 207, 74, 0.95);
+    background-color: white;
+}
+
+header h1{
+    background-color: hsla(0, 50%, 69%, 0.88);
+}
+
+footer{
+    color:rgba(158, 140, 217, 0.95)
+}
+div.participation{
+    color: gold;
+}
+aside.sidebar{
+    color:maroon
+}
+
+/*------Layout-----*/
+div,article,section,header,nav,figure,li{
+    position: relative;
+}
+
+header h1{
+    left:100px;
+}
+
+aside.sidebar{
+    position: absolute;
+    top:3%;
+    right: 0;
+    width: 37%;
+}
+
+footer{
+    position:fixed;
+    width:30%;
+    left:45%;
+    bottom:0px;
+}
