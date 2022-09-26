@@ -64,6 +64,12 @@ section.intro{
     width: 60%;
 }
 
+section.intro div.preamble{
+    margin-left: -30%;
+    padding: 5% 10% 15% 20%;
+    border: hsla(0, 50%, 69%, 0.88);
+}
+
 div.explanation{
     float: left;
     width: 40%;
@@ -108,7 +114,7 @@ header h1{
 a{
     text-decoration: none;
     color:rgba(21, 71, 30, 0.915);
-    background-image: url('../img/zengarden.gif');
+    /*background-image: url('../img/zengarden.gif');*/
 }
 
 h2{
@@ -120,4 +126,56 @@ h3{
     font-weight: 200;
     letter-spacing: 1px;
     line-height: 1em;
+}
+
+/* Nav bar on top */
+
+#zen-resources{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: dodgerblue;
+}
+
+#zen-resources h3{
+    display: none;
+}
+
+#zen-reosurces ul li{
+    display: inline-block;
+    /* width, padding, border */
+    list-style: none;
+}
+
+/* hover, active practice */
+
+p:hover{
+    border: hsla(0, 75%, 69%, 0.88) 5px solid;
+}
+
+h3:active~p{
+    visibility: hidden;
+    /*display: none;*/
+}
+
+li:first-of-type{
+    color: maroon;
+}
+
+p::first-letter{
+    font-size: 250%;
+    text-transform: uppercase;
+}
+
+p:nth-child(3n){
+    background-color: yellow;
+}
+
+p:nth-child(3n+1){
+    background-color: aqua;
+}
+
+p:nth-child(3n+2){
+    background-color: royalblue;
 }
