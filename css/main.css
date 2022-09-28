@@ -179,3 +179,40 @@ p:nth-child(3n+1){
 p:nth-child(3n+2){
     background-color: royalblue;
 }
+
+/*textshadow boxshadow border radius transform*/
+h3{
+    text-shadow: 0.3em 0.3em 0.1em maroon;
+    border: black 1px;
+    border-radius: 20px 20px 30px 30px;
+    box-shadow: -10px -10px 100px blue;
+    transition: ease-in-out 3s, transform 3s;
+}
+
+/*transform*/
+h3:hover{
+    transform: translate(5px, 20px);
+}
+
+h3 ~p{
+    opacity: 1;
+    transition: ease-in-out 3s, all 3s;
+}
+
+h3:active +p{
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+h2{
+    background-image: linear-gradient(red,yellow,blue);
+    animation: 4s infinite running movecolor;
+}
+
+/*animation--define intermediate state*/
+
+@keyframes movecolor{
+    frome{background-image: linear-gradient(red, yellow, blue);}
+    30%{background-image: linear-gradient(yellow, blue, red);}
+    60%{background-image: linear-gradient(blue, red, yellow);}
+}
